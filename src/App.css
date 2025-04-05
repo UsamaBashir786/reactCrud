@@ -1,0 +1,105 @@
+/* src/App.css */
+/* Custom styles for the application */
+
+/* Global styles */
+body {
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Card hover effect */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+.btn {
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.btn-primary {
+  background-color: #3f51b5;
+  border-color: #3f51b5;
+}
+
+.btn-primary:hover {
+  background-color: #303f9f;
+  border-color: #303f9f;
+}
+
+/* Navbar styles */
+.navbar-dark.bg-primary {
+  background-color: #3f51b5 !important;
+}
+
+/* Footer styles */
+footer {
+  border-top: 1px solid #dee2e6;
+}
+
+/* Book card image container */
+.card-img-top {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Badge styles */
+.badge {
+  font-weight: 500;
+  padding: 0.5em 0.8em;
+}
+
+/* Form styles */
+.form-control:focus {
+  border-color: #3f51b5;
+  box-shadow: 0 0 0 0.25rem rgba(63, 81, 181, 0.25);
+}
+
+/* Admin dashboard card styles */
+.card .card-footer {
+  background-color: transparent;
+  border-top: none;
+}
+
+/* Table styles */
+.table-responsive {
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
+
+/* Animation for alerts */
+.alert {
+  animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3f51b5;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #303f9f;
+}
